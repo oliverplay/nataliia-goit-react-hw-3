@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/nataliia-goit-react-hw-3/static/css/main.bc606e3a.css",
+    "main.js": "/nataliia-goit-react-hw-3/static/js/main.f43995cd.js",
+    "index.html": "/nataliia-goit-react-hw-3/index.html",
+    "main.bc606e3a.css.map": "/nataliia-goit-react-hw-3/static/css/main.bc606e3a.css.map",
+    "main.f43995cd.js.map": "/nataliia-goit-react-hw-3/static/js/main.f43995cd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bc606e3a.css",
+    "static/js/main.f43995cd.js"
+  ]
+}
