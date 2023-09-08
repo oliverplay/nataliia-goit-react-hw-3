@@ -1,5 +1,5 @@
-import React from "react";
-import ReactLoading from "react-loading";
+import React from 'react';
+import ReactLoading from 'react-loading';
 import s from './Loader.module.css';
 
 const Loader = () => {

@@ -1,17 +1,17 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 import { BsSearch } from 'react-icons/bs';
 import PropTypes from 'prop-types';
 import Notiflix from 'notiflix';
 import s from './Searchbar.module.css';
 
-class Searchbar extends Component{
+class Searchbar extends Component {
     state = {
         topic: '',
     };
 
     handleTopicChange = e => {
         this.setState({
-            topic: e.currentTarget.value.toLowerCase()
+            topic: e.currentTarget.value.toLowerCase(),
         });
     };
 
@@ -22,8 +22,8 @@ class Searchbar extends Component{
         if (topic.trim() === '') {
             Notiflix.Notify.info('Put a topic you are looking for');
             return;
-        };
-        
+        }
+
         this.props.onSubmit(topic);
         this.setState({ topic: '' });
     };
@@ -35,7 +35,9 @@ class Searchbar extends Component{
             <header className={s.searchbar}>
                 <form className={s.form} onSubmit={handleSubmit}>
                     <button type="submit" className={s.button}>
-                        <span className={s.buttonLabel}><BsSearch  fill="#3f51b5" /></span>
+                        <span className={s.buttonLabel}>
+                            <BsSearch fill="#3f51b5" />
+                        </span>
                     </button>
                     <input
                         className={s.input}
@@ -49,8 +51,8 @@ class Searchbar extends Component{
                 </form>
             </header>
         );
-    };
-};
+    }
+}
 
 Searchbar.propTypes = {
     onSubmit: PropTypes.func.isRequired,
